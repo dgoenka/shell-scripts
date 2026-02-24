@@ -82,3 +82,5 @@ while IFS= read -r filename; do
       safe_move "$filename" "$target_dir"
   fi
 done < "$TMPFILE"
+rm -f "$TMPFILE"
+
